@@ -3,3 +3,7 @@ C:\xampp\mysql\bin\mysql -u root -p  longkietshop < C:\xampp\htdocs\longkietshop
 
 C:\xampp\htdocs\longkietshop
 E:\SaoVietSoft_Proposal\Shop_Man_Fashion\Hosting_backup
+
+aaaaaaaaaaaaa
+bbbbbbbbbbbbb
+ccccccccccccc
