@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>EShop</name>
+	<creationDate>May 2013</creationDate>
+	<author>Giang Dinh Truong</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.8</version>
+	<description>Shopping Cart extension for Joomla 2.5 and 3.0</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.eshop.sql</file>
+		</sql>
+	</install>
+	<media destination="com_eshop" folder="site/media">
+		<folder>categories</folder>
+		<folder>files</folder>
+		<folder>flags</folder>
+		<folder>invoices</folder>
+		<folder>manufacturers</folder>
+		<folder>options</folder>
+		<folder>products</folder>
+		<filename>index.html</filename>
+		<filename>logo_eshop.png</filename>
+	</media>
+	<languages>
+		<language tag="en-GB">site/languages/en-GB/en-GB.com_eshop.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_auspost.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_flat.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_free.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_item.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_price.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_ups.ini</language>
+		<language tag="en-GB">site/languages/en-GB/en-GB.plg_eshop_weight.ini</language>
+	</languages>
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>emailtemplates</folder>
+		<folder>helpers</folder>
+		<folder>invoicetemplates</folder>
+		<folder>models</folder>
+		<folder>plugins</folder>
+		<folder>tcpdf</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>eshop.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+	</files>
+	<administration>
+		<menu>Eshop</menu>
+		<languages>
+			<language tag="en-GB">admin/languages/en-GB/en-GB.com_eshop.sys.ini</language>
+			<language tag="en-GB">admin/languages/en-GB/en-GB.com_eshop.ini</language>
+		</languages>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>controller.php</filename>
+			<filename>eshop.php</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+</extension>

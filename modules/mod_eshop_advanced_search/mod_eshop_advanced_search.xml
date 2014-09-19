@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Eshop Advanced Search</name>
+	<creationDate>May 2013</creationDate>
+	<author>Giang Dinh Truong</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.4</version>
+	<description>This is advanced search products for Eshop</description>
+	<files>
+		<filename module="mod_eshop_advanced_search">mod_eshop_advanced_search.php</filename>
+		<folder>tmpl</folder>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_eshop_advanced_search.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_eshop_advanced_search.ini</language>
+	</languages>
+	<params>
+		<param name="classname" type="text" default="" label="Class Name" description="Class Name Description" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_eshop/elements">
+				<field type="asset" path="modules/mod_eshop_advanced_search/admin/" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="category_id" type="eshopcategories" default="" label="ESHOP_CATEGORY" description="Class Name Description" />
+				<field name="width_result" type="text" default="270" label="ESHOP_WIDTH_RESULT" description="" />
+				<field name="image_width" type="text" default="50" label="ESHOP_THUMBNAIL_WIDTH" description="" />
+				<field name="image_height" type="text" default="50" label="ESHOP_THUMBNAIL_HEIGHT" description="" />
+				<field name="description_max_chars" type="text" default="50" label="ESHOP_ADVANCED_SEARCH_DESCRIPTION_MAX_CHAR" description="ESHOP_ADVANCED_SEARCH_DESCRIPTION_MAX_CHAR" />
+				<field name="replacer" type="text" default="..." label="ESHOP_ADVANCED_SEARCH_TEXT_REPLACER" description="" />
+				<field name="number_product" type="text" default="5" label="ESHOP_NUMBER_PRODUCT" description="" />
+				<field name="show_price" type="list" class="eshop_switch" default="1"
+					label="ESHOP_SHOW_PRICE"
+					description="">
+		    		<option value="1">ESHOP_ADVANCED_SEARCH_YES</option>
+		    		<option value="0">ESHOP_ADVANCED_SEARCH_NO</option>
+				</field>
+				<field name="show_manufacturer" type="list" class="eshop_switch" default="1"
+					label="ESHOP_SHOW_MANUFACTURER"
+					description="">
+		    		<option value="1">ESHOP_ADVANCED_SEARCH_YES</option>
+		    		<option value="0">ESHOP_ADVANCED_SEARCH_NO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

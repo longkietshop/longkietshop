@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="shipping">
+	<name>eshop_price</name>
+	<title>Price Shipping</title>
+	<author>Giang Dinh Truong</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright 2013 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.1.8</version>
+	<description>This is Price Shipping method for Eshop</description>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+			<fieldset name="basic">
+				<field name="package_fee" type="text" label="Package fee" description="This is fee for package" size="5" default="0"></field>
+				<field name="sub_total_range" type="text" label="Sub total range" description="Enter sub total range with format: total_1;total_2;total_3;total4;..." size="50"></field>
+				<field name="cost_range" type="text" label="Cost range" description="Enter corresponding costs range with format: cost_1;cost_2;cost_3;cost_4;..." size="50"></field>
+				<field name="min_sub_total_for_free" type="text" label="Min sub total for free" description="If sub total of order is >= this min price, then shipping will be free" size="5" default="0"></field>
+				<field name="taxclass_id" type="eshoptaxclass" label="Tax Class"></field>
+				<field name="geozone_id" type="eshopgeozone" label="Geo Zone"></field>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>price.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_eshop_price.ini</language>
+	</languages>
+	<installsql />
+	<installfile />
+</install>

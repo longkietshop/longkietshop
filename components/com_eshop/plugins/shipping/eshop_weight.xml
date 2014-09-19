@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="shipping">
+	<name>eshop_weight</name>
+	<title>Weight Shipping</title>
+	<author>Giang Dinh Truong</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright 2013 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.1.8</version>
+	<description>This is Weight Shipping method for Eshop</description>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+			<fieldset name="basic">
+				<field name="rates" type="textarea" label="Rates" description="You can set up multiple rates for multiple geozones, each rate per a row with format: geozone_id|weight_1;cost_1|weight_2;cost_2|weight_3;cost_3;..."></field>
+				<field name="taxclass_id" type="eshoptaxclass" label="Tax Class"></field>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>weight.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_eshop_weight.ini</language>
+	</languages>
+	<installsql />
+	<installfile />
+</install>

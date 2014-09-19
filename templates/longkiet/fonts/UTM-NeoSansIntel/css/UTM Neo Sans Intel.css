@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'UTM-NeoSansIntel';
+  src: url('../fonts/UTM Neo Sans Intel.eot?v=4.0.3');
+  src: url('../fonts/UTM Neo Sans Intel.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/UTM Neo Sans Intel.woff?v=4.0.3') format('woff'), url('../fonts/UTM Neo Sans Intel.ttf?v=4.0.3') format('truetype'), url('../fonts/UTM Neo Sans Intel.svg?v=4.0.3#UTM-NeoSansIntelregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

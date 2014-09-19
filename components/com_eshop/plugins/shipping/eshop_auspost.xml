@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="shipping">
+	<name>eshop_auspost</name>
+	<title>Australia Post Shipping</title>
+	<author>Giang Dinh Truong</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright 2013 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.1.8</version>
+	<description>This is Australia Post Shipping method for Eshop</description>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+			<fieldset name="basic">
+				<field name="postcode" type="text" label="Post Code" description="" size="5" default=""></field>
+				<field name="standard_postage" type="list" label="Standard Postage" description="" default="0">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="express_postage" type="list" label="Express Postage" description="" default="0">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="display_delivery_time" type="list" label="Display Delivery Time" description="" default="0">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="weight_id" type="eshopweight" label="Weight"></field>
+				<field name="taxclass_id" type="eshoptaxclass" label="Tax Class"></field>
+				<field name="geozone_id" type="eshopgeozone" label="Geo Zone"></field>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>eshop_auspost.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_eshop_auspost.ini</language>
+	</languages>
+	<installsql />
+	<installfile />
+</install>

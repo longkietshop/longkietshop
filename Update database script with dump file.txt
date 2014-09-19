@@ -1,5 +1,0 @@
-C:\xampp\mysql\bin\mysqldump -u root -p  --result-file="C:\xampp\htdocs\longkiet_backup.sql" longkietshop
-C:\xampp\mysql\bin\mysql -u root -p  longkietshop < C:\xampp\htdocs\longkietshop\dump.sql
-
-C:\xampp\htdocs\longkietshop
-E:\SaoVietSoft_Proposal\Shop_Man_Fashion\Hosting_backup

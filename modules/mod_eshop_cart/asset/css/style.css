@@ -1,0 +1,79 @@
+eshop-cart .eshop-items a {
+	color: #38B0E3;
+	text-decoration: none;
+}
+#eshop-cart .eshop-items a span {
+	background: url("../images/arrow-down.png") no-repeat scroll 100% 50% #FFFFFF;
+	padding-right: 15px;
+}
+.eshop-content{
+	background: #FFFFFF;
+	border-color: #EEEEEE;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 2px 2px #DDDDDD;
+	clear: both;
+	min-height: 150px;
+	width: 250px;
+	padding: 8px;
+	position: absolute;
+	top: 110%;
+}
+.eshop-items a:hover{
+	cursor: pointer;
+}
+.eshop-items{
+	margin-top: 10px;
+	z-index: 1;
+}
+.eshop-items h4 {
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+#eshop-cart{
+	position: relative;
+	right: 0;
+	top: 0;
+	float: right;
+	z-index: 9999;
+}
+.eshop-mini-cart-info td {
+	border-bottom: 1px solid #EEEEEE;
+	color: #000000;
+	padding: 10px 5px;
+	vertical-align: top;
+}
+.eshop-mini-cart-info .eshop-image {
+	text-align: left;
+}
+.eshop-mini-cart-info .eshop-name {
+	text-align: left;
+}
+.eshop-mini-cart-info .eshop-quantity {
+	text-align: right;
+}
+.eshop-mini-cart-info .eshop-image img {
+	border: 1px solid #EEEEEE;
+	text-align: left;
+}
+.eshop-mini-cart-info .eshop-remove {
+	text-align: right;
+}
+.eshop-mini-cart-info .eshop-total {
+	text-align: right;
+}
+.mini-cart-total {
+	border-bottom: 1px solid #EEEEEE;
+	padding: 10px 5px;
+	text-align: right;
+}
+.eshop-right {
+	text-align: right;
+}
+.checkout {
+	clear: both;
+    text-align: right;
+}
